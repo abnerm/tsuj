@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php bloginfo('name') ?></title>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/about-style.css" type="text/css" media="screen" />
 	
 	<?php wp_head(); ?>
 </head>
@@ -27,7 +28,7 @@
 	</h1>
 	
 	<nav class="menu main <?php echo $navClass ?>">
-	    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '' ) ); ?>
+	    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false ) ); ?>
 	</nav>
 
 </header>

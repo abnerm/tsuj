@@ -19,7 +19,6 @@ body {
   font-size: 16px;
   font-family: "proxima-nova", sans-serif;
   text-rendering: optimizeLegibility;
-  word-wrap: break-word;
 }
 ::selection {
   background: #e83791;
@@ -220,6 +219,7 @@ main section#content .masonryItem .content {
 }
 main section#content .masonryItem .main_text {
   -webkit-transition: all .3s;
+  padding-bottom: 10px;
   text-align: left;
 }
 main section#content .masonryItem .date {
@@ -422,7 +422,7 @@ main section#content .gutter-sizer {
 }
 @media (max-width: 400px) and (min-width: 0px) {
   body {
-    font-size: 18px;
+    font-size: 15px;
   }
   #hero {
     font-size: 5px;

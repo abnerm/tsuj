@@ -12,31 +12,31 @@ get_header() ?>
 	<section id="aboutSections">
 		<div id="fullLayout">
 			<div id="leftColumn">
-				<div class="centerChildren" id="performer">
-					<h2 class="childBlocks"><span id="performerSpan">performer</span></h2>
+				<div class="animateSections" id="performer">
+					<h2 class="childBlocks "><span id="performerSpan">performer</span></h2>
 				</div>
-				<div class="centerChildren" id="vocalCoach">
+				<div class="animateSections" id="vocalCoach">
 					<h2 class="childBlocks"><span id="vocalSpan">vocal</span>
 					<span id="coachSpan">coach</span></h2>
 				</div>
-				<div class="centerChildren" id="pianist">
+				<div class="animateSections" id="pianist">
 					<h2 class="childBlocks"><span id="pianistSpan">pianist</span></h2>
 				</div>
-				<div class="centerChildren" id="musicDirector">
+				<div class="animateSections" id="musicDirector">
 					<h2 class="childBlocks"><span id="musicSpan">music</span>
 					<br>
 					<span id="directorSpan">director</span></h2>
 				</div>
 			</div>
 			<div id="rightColumn">
-				<div class="centerChildren" id="headshots">
+				<div class="animateSections" id="headshots">
 					<h2 class="childBlocks"><span id="headshotsSpan">headshots</span>
 					<span id="photosSpan">&#38 photos</span></h2>
 				</div>
-				<div class="centerChildren" id="bio">
+				<div class="animateSections" id="bio">
 					<h2 class="childBlocks"><span id="bioSpan">bio</span></h2>
 				</div>
-				<div class="centerChildren" id="press">
+				<div  class="animateSections" id="press">
 					<h2 class="childBlocks"><span id="pressSpan">press</span></h2>
 				</div>
 			</div>

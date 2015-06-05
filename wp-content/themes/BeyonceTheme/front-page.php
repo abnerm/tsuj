@@ -2,7 +2,7 @@
 <main class="clearfix">
 	<section id="hero">
 		<h1>Chris Tsujiuchi</h1>
-		<h2>A Very Chris-terical Website</h2>
+		<h2>A very Chris-terical Website</h2>
 		<video autoplay loop class="underlay">
 			<source src="<?php bloginfo('template_directory') ?>/video/TsujHeaderVid.webm" type="video/webm">
 			<source src="<?php bloginfo('template_directory') ?>/video/TsujHeaderVid.mp4" type="video/mp4">
