@@ -9,11 +9,26 @@ h2 {
 }
 
 
+
+.animateSections >h2 {
+	opacity:1;
+	-webkit-transition: all 0.5s ease-in-out;
+}
+
+.animateSections:hover > h2 {
+	opacity:0;
+	
+}
+
+
+
+
 .childBlocks {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 }
+
 
 #performerSpan {
 	
@@ -23,11 +38,14 @@ h2 {
 	font-size: .6em;
 	letter-spacing: 12px;
 	display:block;
+	position:relative;
+	left:6px;
 }
 
 #coachSpan {
 	font-size:.8em;
 	display:block;
+	line-height: 100%;
 }
 
 #pianistSpan {
@@ -38,19 +56,27 @@ h2 {
 	font-size: 1.2em;
 	letter-spacing: 3px;
 	display:block;
+	position:relative;
+	top:23px;
+
 }
 
 #directorSpan {
 	font-size: .5em;
 	display:block;
-	line-height: 60%;
-	letter-spacing: 13px;
+	line-height: -10%;
+	letter-spacing: 12px;
+	position: relative;
+	left:2px;
+	bottom:2px;
 }
 
 #headshotsSpan {
 	display:block;
 	font-size: .7em;
 	letter-spacing: 10px;
+	position:relative;
+	left:5px;
 }
 
 #photosSpan {
@@ -88,6 +114,8 @@ h2 {
 
 }
 
+
+
 #aboutSections {
 	width:100%;
 	height:900px;
@@ -100,6 +128,8 @@ h2 {
 					width:50%;
 					height:900px;
 					background-color:#1B1419;
+
+					
 						#performer {
 							width:100%;
 							height:50%;
@@ -108,15 +138,18 @@ h2 {
 							background-size:cover;
 							background-repeat:no-repeat;
 						}
-						#performer h2:hover {
+
+						#performer:hover {
 							
 						}
 
+						
 						#vocalCoach {
-							width:100%;
+							min-width:50%;
 							height:25%;
 							border:solid white 4px;
 							background:url(img/vocalcoach.jpg);
+							background-position-y: -75px;
 							background-size:cover;
 							background-repeat:no-repeat;
 						}
@@ -153,6 +186,7 @@ h2 {
 							height:25%;
 							border:solid white 4px;
 							background:url(img/chrisheadshot2.jpg);
+							background-position-y: -75px;
 							background-size:cover;
 							background-repeat:no-repeat;
 						}
@@ -162,6 +196,7 @@ h2 {
 							height:50%;
 							border:solid white 4px;
 							background:url(img/kidchris.jpg);
+							background-position-y:-100px;
 							background-size:cover;
 							background-repeat:no-repeat;
 							
@@ -173,6 +208,7 @@ h2 {
 							border:solid white 4px;
 							background:url(img/chrisChristmas.jpg);
 							background-size:cover;
+							background-position-y: -300px;
 							background-repeat:no-repeat;
 						}
 				}
@@ -184,11 +220,11 @@ h2 {
 
 
 /********************************************************MEDIA QUERIES******************************************************/
-@media (max-width: 1330px) and (min-width: 1180px){ 
-	// body {font-size: 13px;}
-	// header {font-size: 15px;}
+// @media (max-width: 1330px) and (min-width: 1180px){ 
+// 	// body {font-size: 13px;}
+// 	// header {font-size: 15px;}
 	
-}
+// }
 @media (max-width: 1180px) and (min-width: 1025px){ 
 	#musicSpan {
 		font-size:.8em;
@@ -261,76 +297,140 @@ h2 {
 	}
 }
 @media (max-width: 768px) and (min-width: 480px){ 
+		#aboutSections {
+		width:100%;
+		height:900px;
+			#fullLayout {
+				width:100%;
+				height:auto;
+				padding:2px;
+					#leftColumn {
+						float:none;
+						width:100%;
+						height:auto;
+							#performer {
+								width:100%;
+								height:250px;
+							}
+
+							#vocalCoach {
+								float:none;
+								width:100%;
+								height:250px;
+							}
+
+							#pianist {
+								float:none;
+								width:100%;
+								height:250px;
+							}
+
+							#musicDirector {
+								width:100%;
+								height:250px;
+								clear:both;
+							}
+					}
+
+					#rightColumn {
+						float:none;
+						width:100%;
+						height:auto;
+							#headshots {
+								width: 100%;
+								height:250px;
+								float:left;
+							}
+
+							#bio {
+								float:right;
+								width:100%;
+								height:250px;
+							
+							}
+
+							#press {
+								width:100%;
+								height:250px;
+								clear:both;
+							}
+					}
+			}
+	}
+}
+@media (max-width: 480px) and (min-width: 400px){ 
 	#aboutSections {
-	width:100%;
-	height:900px;
-		#fullLayout {
-			width:100%;
-			height:auto;
-			padding:2px;
-				#leftColumn {
-					float:none;
-					width:100%;
-					height:auto;
-						#performer {
-							width:100%;
-							height:250px;
-						}
+		width:100%;
+		height:900px;
+			#fullLayout {
+				width:100%;
+				height:auto;
+				padding:2px;
+					#leftColumn {
+						float:none;
+						width:100%;
+						height:auto;
+							#performer {
+								width:100%;
+								height:250px;
+							}
 
-						#vocalCoach {
-							float:none;
-							width:100%;
-							height:250px;
-						}
+							#vocalCoach {
+								width:100%;
+								height:25%;
+								border:solid white 4px;
+								background:url(img/vocalcoach.jpg);
+								background-position-y: -75px;
+								background-size:contain;
+								background-repeat:no-repeat;
+							}
 
-						#pianist {
-							float:none;
-							width:100%;
-							height:250px;
-						}
+							#pianist {
+								float:none;
+								width:100%;
+								height:250px;
+							}
 
-						#musicDirector {
-							width:100%;
-							height:250px;
-							clear:both;
-						}
-				}
+							#musicDirector {
+								width:100%;
+								height:250px;
+								clear:both;
+							}
+					}
 
-				#rightColumn {
-					float:none;
-					width:100%;
-					height:auto;
-						#headshots {
-							width: 100%;
-							height:250px;
-							float:left;
-						}
+					#rightColumn {
+						float:none;
+						width:100%;
+						height:auto;
+							#headshots {
+								width: 100%;
+								height:250px;
+								float:left;
+							}
 
-						#bio {
-							float:right;
-							width:100%;
-							height:250px;
-						
-						}
+							#bio {
+								float:right;
+								width:100%;
+								height:250px;
+							
+							}
 
-						#press {
-							width:100%;
-							height:250px;
-							clear:both;
-						}
-				}
-		}
+							#press {
+								width:100%;
+								height:250px;
+								clear:both;
+							}
+					}
+			}
+	}
+	// body {
+	// 	font-size: 16px;
+	// }
+	// #hero {font-size: 5px;}
 }
+@media (max-width: 400px) and (min-width: 0px){ 
+	// body {
+	// 	font-size: 15px;
+	// }
+	// #hero {font-size: 5px;}
 }
-// @media (max-width: 480px) and (min-width: 400px){ 
-// 	// body {
-// 	// 	font-size: 16px;
-// 	// }
-// 	// #hero {font-size: 5px;}
-// }
-// @media (max-width: 400px) and (min-width: 0px){ 
-// 	// body {
-// 	// 	font-size: 15px;
-// 	// }
-// 	// #hero {font-size: 5px;}
-// }

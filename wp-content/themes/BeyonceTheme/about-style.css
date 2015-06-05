@@ -7,6 +7,13 @@ h2 {
   text-align: center;
   margin: 0 auto;
 }
+.animateSections > h2 {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.animateSections:hover > h2 {
+  opacity: 0;
+}
 .childBlocks {
   position: relative;
   top: 50%;
@@ -16,10 +23,13 @@ h2 {
   font-size: .6em;
   letter-spacing: 12px;
   display: block;
+  position: relative;
+  left: 6px;
 }
 #coachSpan {
   font-size: .8em;
   display: block;
+  line-height: 100%;
 }
 #pianistSpan {
   font-size: ;
@@ -28,17 +38,24 @@ h2 {
   font-size: 1.2em;
   letter-spacing: 3px;
   display: block;
+  position: relative;
+  top: 23px;
 }
 #directorSpan {
   font-size: .5em;
   display: block;
-  line-height: 60%;
-  letter-spacing: 13px;
+  line-height: -10%;
+  letter-spacing: 12px;
+  position: relative;
+  left: 2px;
+  bottom: 2px;
 }
 #headshotsSpan {
   display: block;
   font-size: .7em;
   letter-spacing: 10px;
+  position: relative;
+  left: 5px;
 }
 #photosSpan {
   font-size: 1.1em;
@@ -89,10 +106,11 @@ h2 {
   background-repeat: no-repeat;
 }
 #aboutSections #fullLayout #leftColumn #vocalCoach {
-  width: 100%;
+  min-width: 50%;
   height: 25%;
   border: solid white 4px;
   background: url(img/vocalcoach.jpg);
+  background-position-y: -75px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -125,6 +143,7 @@ h2 {
   height: 25%;
   border: solid white 4px;
   background: url(img/chrisheadshot2.jpg);
+  background-position-y: -75px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -133,6 +152,7 @@ h2 {
   height: 50%;
   border: solid white 4px;
   background: url(img/kidchris.jpg);
+  background-position-y: -100px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -142,6 +162,7 @@ h2 {
   border: solid white 4px;
   background: url(img/chrisChristmas.jpg);
   background-size: cover;
+  background-position-y: -300px;
   background-repeat: no-repeat;
 }
 /********************************************************MEDIA QUERIES******************************************************/
@@ -228,6 +249,65 @@ h2 {
     float: none;
     width: 100%;
     height: 250px;
+  }
+  #aboutSections #fullLayout #leftColumn #pianist {
+    float: none;
+    width: 100%;
+    height: 250px;
+  }
+  #aboutSections #fullLayout #leftColumn #musicDirector {
+    width: 100%;
+    height: 250px;
+    clear: both;
+  }
+  #aboutSections #fullLayout #rightColumn {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  #aboutSections #fullLayout #rightColumn #headshots {
+    width: 100%;
+    height: 250px;
+    float: left;
+  }
+  #aboutSections #fullLayout #rightColumn #bio {
+    float: right;
+    width: 100%;
+    height: 250px;
+  }
+  #aboutSections #fullLayout #rightColumn #press {
+    width: 100%;
+    height: 250px;
+    clear: both;
+  }
+}
+@media (max-width: 480px) and (min-width: 400px) {
+  #aboutSections {
+    width: 100%;
+    height: 900px;
+  }
+  #aboutSections #fullLayout {
+    width: 100%;
+    height: auto;
+    padding: 2px;
+  }
+  #aboutSections #fullLayout #leftColumn {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  #aboutSections #fullLayout #leftColumn #performer {
+    width: 100%;
+    height: 250px;
+  }
+  #aboutSections #fullLayout #leftColumn #vocalCoach {
+    width: 100%;
+    height: 25%;
+    border: solid white 4px;
+    background: url(img/vocalcoach.jpg);
+    background-position-y: -75px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   #aboutSections #fullLayout #leftColumn #pianist {
     float: none;

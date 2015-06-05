@@ -3,6 +3,7 @@ var CONST = {
 	gutter : 4
 }
 
+
 // REARRANGE ELEMENTS
 
 var order = [21,21,13,13, 13,13,21,21, 21,21,17,17, 21,21,19,19, 19,21,21,21]
@@ -74,7 +75,35 @@ var pxFromTop = j$(window).scrollTop()
 var initWidth = Math.floor( j$(window).width());
 var initHeight = Math.floor( j$(window).height())
 
-
+j$( '.main_text' ).each(function(index) {
+	if ( initWidth > 650 ){
+		if( j$('.main_text')[index].innerHTML.length > 0 ) {
+			j$('.main_text')[index].style.fontSize = "2em"
+		}
+		if( j$('.main_text')[index].innerHTML.length > 40 ) {
+			j$('.main_text')[index].style.fontSize = "1.6em"
+		}
+		if( j$('.main_text')[index].innerHTML.length > 60 ) {
+			j$('.main_text')[index].style.fontSize = "1.4em"
+		}
+		if( j$('.main_text')[index].innerHTML.length > 300 ) {
+			j$('.main_text')[index].style.fontSize = "1em"
+		}
+	} else if ( initWidth < 650 ) {
+		if( j$('.main_text')[index].innerHTML.length > 0 ) {
+			j$('.main_text')[index].style.fontSize = "2.5em"
+		}
+		if( j$('.main_text')[index].innerHTML.length > 40 ) {
+			j$('.main_text')[index].style.fontSize = "2em"
+		}
+		if( j$('.main_text')[index].innerHTML.length > 60 ) {
+			j$('.main_text')[index].style.fontSize = "1.8em"
+		}
+		if( j$('.main_text')[index].innerHTML.length > 300 ) {
+			j$('.main_text')[index].style.fontSize = "1em"
+		}
+	}
+});
 
 
 function sizing_and_centering (windowX, windowY) {
@@ -116,6 +145,7 @@ function sizing_and_centering (windowX, windowY) {
 	centerToHeight(window, "#hero h1")
 	centerToHeight(".social_options", ".intents");
 	centerToHeight(".si_item", ".play");
+
 }
 sizing_and_centering(initWidth, initHeight);
 // MASONRY
@@ -277,6 +307,7 @@ j$('.play').click(function() {
     	j$(this).html('&#xf04b;')
     }  
 })
+
 
 
 
