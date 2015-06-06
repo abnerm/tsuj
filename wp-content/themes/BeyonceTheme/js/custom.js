@@ -174,12 +174,14 @@ j$(window).bind( 'resize',function(e){
 //SCROLL EVENTS
 
 var OnScroll = function() {
-	if (pxFromTop >= 250 && j$('body').hasClass('home') ){
+	if (pxFromTop >= 250){
 		j$('.nav-logo').removeClass('hideLogo');
 		j$('header').css("background-color", "white")
 	}
-	else if ( pxFromTop <= 250 && j$('body').hasClass('home') ) {
-		j$('.nav-logo').addClass('hideLogo');
+	else if ( pxFromTop <= 250) {
+		if ( ! j$('body').hasClass('page') ){
+			j$('.nav-logo').addClass('hideLogo');
+		}
 		j$('header').css("background-color", "transparent")
 	}
 };

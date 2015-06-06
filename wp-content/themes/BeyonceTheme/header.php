@@ -22,7 +22,7 @@
 	?>
 	
 	<h1 class="nav-logo <?php echo $logoClass ?>">
-		<a href="<?php get_home_url(); ?>">
+		<a href="<?php echo get_site_url(); ?>">
 			Chris Tsujiuchi
 		</a>
 	</h1>
