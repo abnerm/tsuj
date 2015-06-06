@@ -248,11 +248,14 @@ var Silk = function(selector, color) {
 
 		var g = document.createElement("CANVAS");
 		var gridWidth = g.width = media.parent().width();
-
-		if (media.parent()[0].id == 'hero' ){
-			var gridHeight = g.height = gridWidth*2;
+		if( j$('body').hasClass('home') ){
+			if ( media.parent()[0].id == 'hero' ){
+				var gridHeight = g.height = gridWidth*2;
+			}else{
+				var gridHeight = g.height = gridWidth;
+			}
 		}else{
-			var gridHeight = g.height = gridWidth;
+			var gridHeight = g.height = media.parent().height();;
 		}
 		
 		var ctx = g.getContext("2d");
@@ -278,12 +281,12 @@ var Silk = function(selector, color) {
 		j$(g).insertAfter( media[index] )
 	});
 };
-if (j$("body").hasClass("home")){
+if (j$("body").hasClass("home") ){
 	Silk(".underlay","#90278C")
 	Silk(".tweet .intents","#90278C")
 	Silk(".si_item .intents","#90278C")
 }
-
+Silk(".childBlocks","#90278C")
 // MASON ITEMS MOUSEOVER EVENTS
 
 j$('.meta_trigger').mouseenter(function() {
