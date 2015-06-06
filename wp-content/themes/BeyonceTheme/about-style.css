@@ -1,4 +1,4 @@
-h2 {
+.page-template-aboutpage h2 {
   text-transform: uppercase;
   color: white;
   font-size: 4em;
@@ -7,41 +7,56 @@ h2 {
   text-align: center;
   margin: 0 auto;
 }
-.animateSections > h2 {
+.page-template-aboutpage .silk {
+  position: absolute;
+  top: 0;
+  left: auto;
+  width: auto;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+}
+.page-template-aboutpage .silk:hover {
+  opacity: 1;
+}
+.page-template-aboutpage .animateSections {
+  position: relative;
+}
+.page-template-aboutpage .animateSections > h2 {
   opacity: 1;
   -webkit-transition: all 0.5s ease-in-out;
 }
-.animateSections:hover > h2 {
-  opacity: 0;
+.page-template-aboutpage .animateSections:hover > h2 {
+  opacity: .4;
 }
-.childBlocks {
+.page-template-aboutpage .childBlocks {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
-#vocalSpan {
+.page-template-aboutpage #vocalSpan {
   font-size: .6em;
   letter-spacing: 12px;
   display: block;
   position: relative;
   left: 6px;
 }
-#coachSpan {
+.page-template-aboutpage #coachSpan {
   font-size: .8em;
   display: block;
   line-height: 100%;
 }
-#pianistSpan {
+.page-template-aboutpage #pianistSpan {
   font-size: ;
 }
-#musicSpan {
+.page-template-aboutpage #musicSpan {
   font-size: 1.2em;
   letter-spacing: 3px;
   display: block;
   position: relative;
   top: 23px;
 }
-#directorSpan {
+.page-template-aboutpage #directorSpan {
   font-size: .5em;
   display: block;
   line-height: -10%;
@@ -50,28 +65,28 @@ h2 {
   left: 2px;
   bottom: 2px;
 }
-#headshotsSpan {
+.page-template-aboutpage #headshotsSpan {
   display: block;
   font-size: .7em;
   letter-spacing: 10px;
   position: relative;
   left: 5px;
 }
-#photosSpan {
+.page-template-aboutpage #photosSpan {
   font-size: 1.1em;
   display: block;
   line-height: 100%;
 }
-#pressSpan {
+.page-template-aboutpage #pressSpan {
   font-size: ;
 }
-#heroImage {
+.page-template-aboutpage #heroImage {
   background: url(img/aboutHero.jpg);
   background-size: cover;
   min-height: 400px;
   max-height: 400px;
 }
-#heroImage h1 {
+.page-template-aboutpage #heroImage h1 {
   padding: 160px;
   margin: 0 auto;
   color: red;
@@ -82,22 +97,22 @@ h2 {
   letter-spacing: 17px;
   text-align: center;
 }
-#aboutSections {
+.page-template-aboutpage #aboutSections {
   width: 100%;
   height: 900px;
 }
-#aboutSections #fullLayout {
+.page-template-aboutpage #aboutSections #fullLayout {
   width: 100%;
   height: 900px;
   padding: 2px;
 }
-#aboutSections #fullLayout #leftColumn {
+.page-template-aboutpage #aboutSections #fullLayout #leftColumn {
   float: left;
   width: 50%;
   height: 900px;
   background-color: #1B1419;
 }
-#aboutSections #fullLayout #leftColumn #performer {
+.page-template-aboutpage #aboutSections #fullLayout #leftColumn #performer {
   width: 100%;
   height: 50%;
   border: solid white 4px;
@@ -105,7 +120,7 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#aboutSections #fullLayout #leftColumn #vocalCoach {
+.page-template-aboutpage #aboutSections #fullLayout #leftColumn #vocalCoach {
   min-width: 50%;
   height: 25%;
   border: solid white 4px;
@@ -114,7 +129,7 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#aboutSections #fullLayout #leftColumn #pianist {
+.page-template-aboutpage #aboutSections #fullLayout #leftColumn #pianist {
   width: 50%;
   height: 25%;
   border: solid white 4px;
@@ -123,7 +138,7 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#aboutSections #fullLayout #leftColumn #musicDirector {
+.page-template-aboutpage #aboutSections #fullLayout #leftColumn #musicDirector {
   width: 50%;
   height: 25%;
   border: solid white 4px;
@@ -132,13 +147,13 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#aboutSections #fullLayout #rightColumn {
+.page-template-aboutpage #aboutSections #fullLayout #rightColumn {
   float: right;
   width: 50%;
   height: 900px;
   background-color: #1B1419;
 }
-#aboutSections #fullLayout #rightColumn #headshots {
+.page-template-aboutpage #aboutSections #fullLayout #rightColumn #headshots {
   width: 100%;
   height: 25%;
   border: solid white 4px;
@@ -147,7 +162,7 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#aboutSections #fullLayout #rightColumn #bio {
+.page-template-aboutpage #aboutSections #fullLayout #rightColumn #bio {
   width: 100%;
   height: 50%;
   border: solid white 4px;
@@ -156,7 +171,7 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#aboutSections #fullLayout #rightColumn #press {
+.page-template-aboutpage #aboutSections #fullLayout #rightColumn #press {
   width: 100%;
   height: 25%;
   border: solid white 4px;
@@ -194,6 +209,7 @@ h2 {
     float: left;
     width: 50%;
     height: 300px;
+    background-position-y: 0;
   }
   #aboutSections #fullLayout #leftColumn #pianist {
     float: right;
