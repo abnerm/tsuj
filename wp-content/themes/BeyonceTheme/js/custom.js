@@ -257,7 +257,7 @@ var Silk = function(selector, color) {
 				var gridHeight = g.height = gridWidth;
 			}
 		}else{
-			var gridHeight = g.height = media.parent().height();;
+			var gridHeight = g.height = media.parent().height();
 		}
 		
 		var ctx = g.getContext("2d");
