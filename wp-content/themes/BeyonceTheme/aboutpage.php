@@ -13,6 +13,7 @@ get_header() ?>
 		<div id="fullLayout">
 			<div id="leftColumn">
 				<div class="animateSections" id="performer">
+					<p class="jobDescription">Chris performs Mmmmarvelously!</p>
 					<h2 class="childBlocks "><span id="performerSpan">performer</span></h2>
 				</div>
 				<div class="animateSections" id="vocalCoach">

@@ -112,6 +112,9 @@
   height: 900px;
   background-color: #1B1419;
 }
+.page-template-aboutpage #aboutSections #fullLayout #leftColumn .jobDescription {
+  color: blue;
+}
 .page-template-aboutpage #aboutSections #fullLayout #leftColumn #performer {
   width: 100%;
   height: 50%;
