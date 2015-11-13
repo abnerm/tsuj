@@ -80,13 +80,13 @@
 .page-template-aboutpage #pressSpan {
   font-size: ;
 }
-.page-template-aboutpage #heroImage {
+.page-template-aboutpage .heroImage {
   background: url(img/aboutHero.jpg);
   background-size: cover;
   min-height: 400px;
   max-height: 400px;
 }
-.page-template-aboutpage #heroImage h1 {
+.page-template-aboutpage .heroImage h1 {
   padding: 160px;
   margin: 0 auto;
   color: red;

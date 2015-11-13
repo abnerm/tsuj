@@ -5,7 +5,7 @@ Template Name: About
 get_header() ?>
 
 <main id="about" class="clearfix">
-	<section id="heroImage">
+	<section class="heroImage">
 			<h1>me</h1>
 	</section>
 
@@ -13,7 +13,7 @@ get_header() ?>
 		<div id="fullLayout">
 			<div id="leftColumn">
 				<div class="animateSections" id="performer">
-					<p class="jobDescription">Chris performs Mmmmarvelously!</p>
+					<p class="jobDescription"></p>
 					<h2 class="childBlocks "><span id="performerSpan">performer</span></h2>
 				</div>
 				<div class="animateSections" id="vocalCoach">
