@@ -48,6 +48,11 @@
   .container {
     width: 85%;
     padding: 0; }
+
+}
+
+.container img {
+  width:100%;
 }
 
 /* For devices larger than 550px */
@@ -112,6 +117,9 @@
   .offset-by-one-half.column,
   .offset-by-one-half.columns     { margin-left: 52%; }
 
+    .container img {
+    width:100%;
+  }
 }
 
 
