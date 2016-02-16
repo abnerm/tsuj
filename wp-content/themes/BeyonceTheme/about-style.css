@@ -4,8 +4,6 @@ body {
 .page-template-aboutpage .titleSection {
   background-color: #300030;
   background-image: url('img/aboutHero.jpg');
-  min-height: 400px;
-  max-height: 400px;
 }
 .page-template-aboutpage .titleSection h1 {
   padding: 160px;
@@ -18,46 +16,42 @@ body {
   letter-spacing: 17px;
   text-align: center;
 }
-.page-template-aboutpage #aboutIntro {
-  font-size: 24px;
-  width: 80%;
-  margin: 0 auto;
-}
-.page-template-aboutpage #aboutAccordion {
-  background-color: #fff;
-  vertical-align: center;
-  max-width: 70%;
-  margin: 0 auto;
-}
-.page-template-aboutpage #aboutAccordion p {
-  color: #1B1419;
-  font-size: 1.5em;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-.page-template-aboutpage #aboutAccordion p .linkColor {
-  color: #E83791;
-  font-weight: bold;
-}
-.page-template-aboutpage #aboutAccordion h1 {
-  font-size: 2.5em;
-  color: #1B1419;
-  margin: 0 auto;
-  border-bottom: 1px solid rgba(211, 211, 211, 0.5);
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-.page-template-aboutpage #aboutAccordion h1 .aboutImgs {
+.page-template-aboutpage #bioSection {
   width: 100%;
-  float: right;
+  padding-top: 75px;
+  padding-bottom: 100px;
 }
-.page-template-aboutpage #aboutAccordion h1:focus {
-  outline: 0;
+.page-template-aboutpage #performerSection {
+  width: 100%;
+  color: #D1D1D1;
+  background-color: #1B1419;
+  padding-top: 75px;
+  padding-bottom: 100px;
 }
-.page-template-aboutpage #aboutAccordion .quoteColor {
-  color: #E83791;
+.page-template-aboutpage #vocalSection {
+  width: 100%;
+  padding-top: 75px;
+  padding-bottom: 100px;
 }
-.page-template-aboutpage #aboutAccordion .fa {
-  margin-right: 20px;
-  color: #E83791;
+.page-template-aboutpage #pianistSection {
+  width: 100%;
+  color: #D1D1D1;
+  background-color: #1B1419;
+  padding-top: 75px;
+  padding-bottom: 100px;
+}
+.page-template-aboutpage #directorSection {
+  width: 100%;
+  padding-top: 75px;
+  padding-bottom: 50px;
+}
+.page-template-aboutpage #pressSection {
+  width: 100%;
+  color: #D1D1D1;
+  background-color: #1B1419;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.page-template-aboutpage p {
+  font-size: 1.4em;
 }

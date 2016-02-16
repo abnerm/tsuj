@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/font-awesome-animation.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/about-style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/skeleton.css" type="text/css" media="screen" />
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-ui.min.js"></script>
 
