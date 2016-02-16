@@ -2,7 +2,9 @@
 <main class="clearfix">
 	<section id="hero">
 		<h1>Chris Tsujiuchi</h1>
-		<h2>A very Chris - terical Website</h2>
+		<h2>(A Very Chris-terical Website)</h2>
+
+		<div id="arrowDown"><i class="fa fa-chevron-down fa-4x faa-float animated faa-fast fa-fw"></i></div>
 		<video autoplay loop class="underlay">
 			<source src="<?php bloginfo('template_directory') ?>/video/tsujvidsite.webm" type="video/webm">
 			<source src="<?php bloginfo('template_directory') ?>/video/tsujvidsite.mp4" type="video/mp4">
@@ -59,7 +61,7 @@
 				        	<div class="intents clearfix">
 				        		<h2><a href="http://twitter.com/'.$username.'"><i class="fa fa-twitter"></i><br>@'.$username.'</a></h2>
 					            <p>
-					            	<a class="reply" href="https://twitter.com/intent/tweet?in_reply_to='.$tweet['id_str'].'">
+					            	<a class="reply"  href="https://twitter.com/intent/tweet?in_reply_to='.$tweet['id_str'].'">
 					            		&#xf112;
 					            		<span>Reply</span>
 					            	</a>

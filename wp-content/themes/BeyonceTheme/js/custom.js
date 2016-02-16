@@ -317,3 +317,34 @@ j$('.play').click(function() {
 
 
 
+// Jquery ACCORDION for About page
+
+
+$(function() {
+    var icons = {
+      header: "fa fa-plus-circle",
+      activeHeader: "fa fa-times-circle"
+    };
+    $( "#aboutAccordion" ).accordion({
+      icons: icons,
+      collapsible: true,
+      active: false,
+      heightStyle: "content"
+    });
+  });
+
+//Jquery SCROLL BACK TO TOP BUTTON
+
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});

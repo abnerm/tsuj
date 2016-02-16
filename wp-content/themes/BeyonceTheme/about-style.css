@@ -1,95 +1,16 @@
-.page-template-aboutpage h2 {
-  text-transform: uppercase;
-  color: white;
-  font-size: 4em;
-  font-family: "proxima-nova", sans-serif !important;
-  line-height: 60%;
-  text-align: center;
-  margin: 0 auto;
+body {
+  background-color: #fff;
 }
-.page-template-aboutpage .silk {
-  position: absolute;
-  top: 0;
-  left: auto;
-  width: auto;
-  z-index: 10;
-  opacity: 0;
-  transition: opacity 0.15s ease-in-out;
-}
-.page-template-aboutpage .silk:hover {
-  opacity: 1;
-}
-.page-template-aboutpage .animateSections {
-  position: relative;
-}
-.page-template-aboutpage .animateSections > h2 {
-  opacity: 1;
-  -webkit-transition: all 0.5s ease-in-out;
-}
-.page-template-aboutpage .animateSections:hover > h2 {
-  opacity: .4;
-}
-.page-template-aboutpage .childBlocks {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.page-template-aboutpage #vocalSpan {
-  font-size: .6em;
-  letter-spacing: 12px;
-  display: block;
-  position: relative;
-  left: 6px;
-}
-.page-template-aboutpage #coachSpan {
-  font-size: .8em;
-  display: block;
-  line-height: 100%;
-}
-.page-template-aboutpage #pianistSpan {
-  font-size: ;
-}
-.page-template-aboutpage #musicSpan {
-  font-size: 1.2em;
-  letter-spacing: 3px;
-  display: block;
-  position: relative;
-  top: 23px;
-}
-.page-template-aboutpage #directorSpan {
-  font-size: .5em;
-  display: block;
-  line-height: -10%;
-  letter-spacing: 12px;
-  position: relative;
-  left: 2px;
-  bottom: 2px;
-}
-.page-template-aboutpage #headshotsSpan {
-  display: block;
-  font-size: .7em;
-  letter-spacing: 10px;
-  position: relative;
-  left: 5px;
-}
-.page-template-aboutpage #photosSpan {
-  font-size: 1.1em;
-  display: block;
-  line-height: 100%;
-}
-.page-template-aboutpage #pressSpan {
-  font-size: ;
-}
-.page-template-aboutpage .heroImage {
-  background: url(img/aboutHero.jpg);
-  background-size: cover;
+.page-template-aboutpage .titleSection {
+  background-color: #300030;
+  background-image: url('img/aboutHero.jpg');
   min-height: 400px;
   max-height: 400px;
 }
-.page-template-aboutpage .heroImage h1 {
+.page-template-aboutpage .titleSection h1 {
   padding: 160px;
   margin: 0 auto;
-  color: red;
+  color: #1B1419;
   text-rendering: optimizeLegibility;
   text-transform: uppercase;
   color: white;
@@ -97,265 +18,46 @@
   letter-spacing: 17px;
   text-align: center;
 }
-.page-template-aboutpage #aboutSections {
+.page-template-aboutpage #aboutIntro {
+  font-size: 24px;
+  width: 80%;
+  margin: 0 auto;
+}
+.page-template-aboutpage #aboutAccordion {
+  background-color: #fff;
+  vertical-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+}
+.page-template-aboutpage #aboutAccordion p {
+  color: #1B1419;
+  font-size: 1.5em;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.page-template-aboutpage #aboutAccordion p .linkColor {
+  color: #E83791;
+  font-weight: bold;
+}
+.page-template-aboutpage #aboutAccordion h1 {
+  font-size: 2.5em;
+  color: #1B1419;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.page-template-aboutpage #aboutAccordion h1 .aboutImgs {
   width: 100%;
-  height: 900px;
-}
-.page-template-aboutpage #aboutSections #fullLayout {
-  width: 100%;
-  height: 900px;
-  padding: 2px;
-}
-.page-template-aboutpage #aboutSections #fullLayout #leftColumn {
-  float: left;
-  width: 50%;
-  height: 900px;
-  background-color: #1B1419;
-}
-.page-template-aboutpage #aboutSections #fullLayout #leftColumn .jobDescription {
-  color: blue;
-}
-.page-template-aboutpage #aboutSections #fullLayout #leftColumn #performer {
-  width: 100%;
-  height: 50%;
-  border: solid white 4px;
-  background: url(img/performer1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.page-template-aboutpage #aboutSections #fullLayout #leftColumn #vocalCoach {
-  min-width: 50%;
-  height: 25%;
-  border: solid white 4px;
-  background: url(img/vocalcoach.jpg);
-  background-position-y: -75px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.page-template-aboutpage #aboutSections #fullLayout #leftColumn #pianist {
-  width: 50%;
-  height: 25%;
-  border: solid white 4px;
-  float: left;
-  background: url(img/keys.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.page-template-aboutpage #aboutSections #fullLayout #leftColumn #musicDirector {
-  width: 50%;
-  height: 25%;
-  border: solid white 4px;
   float: right;
-  background: url(img/sheetmusic.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
-.page-template-aboutpage #aboutSections #fullLayout #rightColumn {
-  float: right;
-  width: 50%;
-  height: 900px;
-  background-color: #1B1419;
+.page-template-aboutpage #aboutAccordion h1:focus {
+  outline: 0;
 }
-.page-template-aboutpage #aboutSections #fullLayout #rightColumn #headshots {
-  width: 100%;
-  height: 25%;
-  border: solid white 4px;
-  background: url(img/chrisheadshot2.jpg);
-  background-position-y: -75px;
-  background-size: cover;
-  background-repeat: no-repeat;
+.page-template-aboutpage #aboutAccordion .quoteColor {
+  color: #E83791;
 }
-.page-template-aboutpage #aboutSections #fullLayout #rightColumn #bio {
-  width: 100%;
-  height: 50%;
-  border: solid white 4px;
-  background: url(img/kidchris.jpg);
-  background-position-y: -100px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.page-template-aboutpage #aboutSections #fullLayout #rightColumn #press {
-  width: 100%;
-  height: 25%;
-  border: solid white 4px;
-  background: url(img/chrisChristmas.jpg);
-  background-size: cover;
-  background-position-y: -300px;
-  background-repeat: no-repeat;
-}
-/********************************************************MEDIA QUERIES******************************************************/
-@media (max-width: 1180px) and (min-width: 1025px) {
-  #musicSpan {
-    font-size: .8em;
-    letter-spacing: 7px;
-  }
-  #directorSpan {
-    font-size: .3em;
-    letter-spacing: 10px;
-  }
-}
-@media (max-width: 1025px) and (min-width: 768px) {
-  #aboutSections #fullLayout {
-    height: auto;
-    padding: 2px;
-  }
-  #aboutSections #fullLayout #leftColumn {
-    float: none;
-    width: 100%;
-    height: auto;
-  }
-  #aboutSections #fullLayout #leftColumn #performer {
-    width: 100%;
-    height: 300px;
-  }
-  #aboutSections #fullLayout #leftColumn #vocalCoach {
-    float: left;
-    width: 50%;
-    height: 300px;
-    background-position-y: 0;
-  }
-  #aboutSections #fullLayout #leftColumn #pianist {
-    float: right;
-    width: 50%;
-    height: 300px;
-  }
-  #aboutSections #fullLayout #leftColumn #musicDirector {
-    width: 100%;
-    height: 300px;
-    clear: both;
-  }
-  #aboutSections #fullLayout #rightColumn {
-    float: none;
-    width: 100%;
-    height: auto;
-  }
-  #aboutSections #fullLayout #rightColumn #headshots {
-    width: 50%;
-    height: 300px;
-    float: left;
-  }
-  #aboutSections #fullLayout #rightColumn #bio {
-    float: right;
-    width: 50%;
-    height: 300px;
-  }
-  #aboutSections #fullLayout #rightColumn #press {
-    width: 100%;
-    height: 300px;
-    clear: both;
-  }
-}
-@media (max-width: 768px) and (min-width: 480px) {
-  #aboutSections {
-    width: 100%;
-    height: 900px;
-  }
-  #aboutSections #fullLayout {
-    width: 100%;
-    height: auto;
-    padding: 2px;
-  }
-  #aboutSections #fullLayout #leftColumn {
-    float: none;
-    width: 100%;
-    height: auto;
-  }
-  #aboutSections #fullLayout #leftColumn #performer {
-    width: 100%;
-    height: 250px;
-  }
-  #aboutSections #fullLayout #leftColumn #vocalCoach {
-    float: none;
-    width: 100%;
-    height: 250px;
-  }
-  #aboutSections #fullLayout #leftColumn #pianist {
-    float: none;
-    width: 100%;
-    height: 250px;
-  }
-  #aboutSections #fullLayout #leftColumn #musicDirector {
-    width: 100%;
-    height: 250px;
-    clear: both;
-  }
-  #aboutSections #fullLayout #rightColumn {
-    float: none;
-    width: 100%;
-    height: auto;
-  }
-  #aboutSections #fullLayout #rightColumn #headshots {
-    width: 100%;
-    height: 250px;
-    float: left;
-  }
-  #aboutSections #fullLayout #rightColumn #bio {
-    float: right;
-    width: 100%;
-    height: 250px;
-  }
-  #aboutSections #fullLayout #rightColumn #press {
-    width: 100%;
-    height: 250px;
-    clear: both;
-  }
-}
-@media (max-width: 480px) and (min-width: 400px) {
-  #aboutSections {
-    width: 100%;
-    height: 900px;
-  }
-  #aboutSections #fullLayout {
-    width: 100%;
-    height: auto;
-    padding: 2px;
-  }
-  #aboutSections #fullLayout #leftColumn {
-    float: none;
-    width: 100%;
-    height: auto;
-  }
-  #aboutSections #fullLayout #leftColumn #performer {
-    width: 100%;
-    height: 250px;
-  }
-  #aboutSections #fullLayout #leftColumn #vocalCoach {
-    width: 100%;
-    height: 25%;
-    border: solid white 4px;
-    background: url(img/vocalcoach.jpg);
-    background-position-y: -75px;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  #aboutSections #fullLayout #leftColumn #pianist {
-    float: none;
-    width: 100%;
-    height: 250px;
-  }
-  #aboutSections #fullLayout #leftColumn #musicDirector {
-    width: 100%;
-    height: 250px;
-    clear: both;
-  }
-  #aboutSections #fullLayout #rightColumn {
-    float: none;
-    width: 100%;
-    height: auto;
-  }
-  #aboutSections #fullLayout #rightColumn #headshots {
-    width: 100%;
-    height: 250px;
-    float: left;
-  }
-  #aboutSections #fullLayout #rightColumn #bio {
-    float: right;
-    width: 100%;
-    height: 250px;
-  }
-  #aboutSections #fullLayout #rightColumn #press {
-    width: 100%;
-    height: 250px;
-    clear: both;
-  }
+.page-template-aboutpage #aboutAccordion .fa {
+  margin-right: 20px;
+  color: #E83791;
 }
