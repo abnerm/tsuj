@@ -396,6 +396,9 @@ main section#content .si_item .social_options .intents h2 {
 main section#content .si_item .social_options .intents .date {
   text-align: left;
 }
+main section#content .si_item .social_options .intents .emoji {
+  width: 16px;
+}
 main section#content .si_item .social_options a {
   background: transparent;
 }

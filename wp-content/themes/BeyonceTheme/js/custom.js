@@ -1,3 +1,8 @@
+window.onload = function () {
+	twemoji.size = '16x16';
+	twemoji.parse(document.body);
+}
+
 var j$ = jQuery.noConflict();
 var CONST = {
 	gutter : 4

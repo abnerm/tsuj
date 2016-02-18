@@ -9,9 +9,11 @@
 	function scripts_enq(){
 	   	wp_register_script( 'masonry', 'https://cdnjs.cloudflare.com/ajax/libs/masonry/3.2.2/masonry.pkgd.min.js', "", "1.0",  true);
 	   	wp_register_script( 'easings', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', "", "1.0",  true);
+	   	wp_register_script( 'twemoji', 'https://twemoji.maxcdn.com/twemoji.min.js', "", "1.3.2",  true);
 	    wp_register_script( 'custom-script', get_template_directory_uri() . '/js/custom.js', "", "1.0",  true);
 	    wp_enqueue_script( 'masonry' );
 	    wp_enqueue_script( 'easings' );
+	    wp_enqueue_script( 'twemoji' );
 	    wp_enqueue_script( 'custom-script' );
 	    
 	}
